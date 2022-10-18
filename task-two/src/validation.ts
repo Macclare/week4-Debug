@@ -39,11 +39,9 @@ async function validateEmailAddresses(inputPath: string[], outputFile: string) {
           if (child) {
             while (count > 1) {
               outputFileRead.write('Emails');
-              //outputFileRead.write('\n')
               count += 1;
             }
             outputFileRead.write(`${el}`);
-            //outputStream.write('\n')
           }
         });
     });
